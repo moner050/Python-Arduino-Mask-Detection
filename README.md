@@ -1,6 +1,8 @@
 # Python-Arduino-Mask-Detection
-Python 마스크 인식 -> ESP32 웹서버 Request -> Arduino 온도측정 및 마스크 착용 유무에대한 음성출력  
-사용한 부품 : Arduino Uno, ESP32-CAM, MLX-90614(온도센서), RED LED, GREEN LED, LM386(스피커),LCD 16x2  
+Python 마스크 인식 -> ESP32 웹서버 Request -> Arduino 온도측정 및 마스크 착용 유무에대한 음성출력 
+
+사용한 부품 : Arduino Uno, ESP32-CAM, MLX-90614(온도센서), RED LED, GREEN LED, LM386(스피커),LCD 16x2 
+
 Python을 이용해 동영상 마스크 인식이 잘 되나 테스트 후  
 ESP32-CAM에서 카메라 웹 서버 개설 후, 실시간 스트리밍하는 영상을 Python으로 복호화시켜 송출한 다음,  
 송출된 영상을 이용해 마스크 인식을 하려고 했으나 응답시간이 너무 느리고 딜레이가 심해서  
