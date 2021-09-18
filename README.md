@@ -1,7 +1,7 @@
 # Python-Arduino-Mask-Detection
 Python 마스크 인식 -> ESP32 웹서버 Request -> Arduino 온도측정 및 마스크 착용 유무에대한 음성출력 
 
-사용한 부품 : Arduino Uno, ESP32-CAM, MLX-90614(온도센서), RED LED, GREEN LED, LM386(스피커),LCD 16x2 
+사용한 부품 : Arduino Uno, ESP32-CAM, MLX-90614(온도센서), RED LED, GREEN LED, LM386(스피커),LCD 16x2  
 사용한 개발 툴 : Pycharm IDE, Arduino IDE
 
 Python을 이용해 동영상 마스크 인식이 잘 되나 테스트 후  
