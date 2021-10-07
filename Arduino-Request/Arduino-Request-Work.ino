@@ -74,7 +74,7 @@ void MskOff()
   lcd.clear();
   lcd.setCursor(0,0);
   lcd.print("Target ");
-  lcd.print(mlx.readObjectTempC() + 2);
+  lcd.print(mlx.readObjectTempC() + 4);
   lcd.print(" C");
   lcd.setCursor(0,1);
   lcd.print("No Mask! ");
@@ -87,10 +87,10 @@ void MskOn()
   lcd.clear();
   lcd.setCursor(0,0);
   lcd.print("Target ");
-  lcd.print(mlx.readObjectTempC()+2);
+  lcd.print(mlx.readObjectTempC()+4);
   lcd.print(" C");
   lcd.setCursor(0,1);
-  if((mlx.readObjectTempC() + 2) >= 36.0 && (mlx.readObjectTempC() + 2) <= 37.5)
+  if((mlx.readObjectTempC() + 4) >= 36.0 && (mlx.readObjectTempC() + 4) <= 37.5)
   {
     lcd.print("   GOOD!");
     digitalWrite(espRedLED, LOW);
@@ -98,7 +98,7 @@ void MskOn()
     voice.say(sp1);
     delay(2500);
   }
-  else if((mlx.readObjectTempC() + 2) < 36.0)
+  else if((mlx.readObjectTempC() + 4) < 36.0)
   {
     lcd.print("Temp is LOW! ");
     digitalWrite(espRedLED, LOW);
