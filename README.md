@@ -2,7 +2,7 @@
 Python 마스크 인식 -> ESP32 웹서버 Request -> Arduino 온도측정 및 마스크 착용 유무에대한 음성출력 
 
 사용한 부품 : Arduino Uno, ESP32-CAM, MLX-90614(온도센서), RED LED, GREEN LED, LM386(스피커),LCD 16x2  
-사용한 개발 툴 : Pycharm IDE, Arduino IDE
+사용한 개발 툴 : Pycharm IDE(2020.3.3), Arduino IDE(1.8.10), Python3.7.9  
 
 Python을 이용해 동영상 마스크 인식이 잘 되나 테스트 후  
 ESP32-CAM에서 카메라 웹 서버 개설 후, 실시간 스트리밍하는 영상을 Python으로 복호화시켜 송출한 다음,  
@@ -16,8 +16,8 @@ Arduino에서 ESP32에서 보낸 핀의 설정에 따라 온도측정 및 음성
 2. 마스크 인식률이 그리 좋지않다. 학습모델을 더 개선시킬 필요 있음. (진행중)  
 3. Arduino에 장착한 MLX90614의 온도 측정이 정확하지않다. 온도의 오차를 조정할 필요 있음.(90% 완료)  
 4. ESP32에 달린 CAM을 폐기하는 대신 ESP32를 웹 서버로만 이용해서 Request를 보낼예정(완료)  
-5. Arduino에 설정한 값이 잘 동작하나 테스트.(테스트 완료)  
-6. 테스트용 케이스가 아닌 3D 프린팅한 케이스에 옮긴 후 정상작동 하나 테스트(테스트 완료)  
+5. Arduino에 설정한 값이 잘 동작하나 테스트.(완료)  
+6. 테스트용 케이스가 아닌 3D 프린팅한 케이스에 옮긴 후 정상작동 하나 테스트(완료)  
 
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmoner050%2FPython-Arduino-Mask-Detection&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
